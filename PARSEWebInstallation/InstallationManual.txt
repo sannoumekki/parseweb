@@ -1,0 +1,23 @@
+
+Installation and User Manual of PARSEWeb tool:
+=============================================
+
+This software contains the code analyzer component of PARSEWeb. PARSEWeb requires .java files that contain necessary information for mining method-call sequences. These files can be collected manually or
+automatically from code search engines such as Google code search and the name of the folder should be given as input to PARSEWeb.
+
+
+Required Softwares:
+===================
+1. Eclipse version: 3.2 or higher
+
+Steps to install software:
+==========================
+1. Create a folder, say "C:\\PARSEWeb", and define a system variable "PARSEWeb_Path" that stores the value of the folder (Say "C:\\PARSEWeb" created for PARSEWeb). Copy "PARSEWeb.properties" in to that location.
+2. The properties described in "PARSEWeb.properties" can be customized according to requirements.
+3. Install eclipse plugin by simply copying the jar file to plugs in folder.
+4. Run eclipse
+5. Click on the menu item PARSEWeb -> Invoke PARSEWeb
+	a. A dialog is prompted for entering the query. Enter the query as "javax.jms.QueueConnectionFactory->javax.jms.QueueSender"
+	b. Another dialog is prompted for entering the directory where samples are stored. Enter a sample directory as "PARSEWebInstallation\samples"
+
+6. The results are shown in the tab "PARSEWeb Search Results".
